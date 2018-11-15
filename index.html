@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Build a Portfolio Site</title>
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+    <link rel="stylesheet" type="text/css" href="style/responsive.css">
+  </head>
+
+  <body>
+    <section class="container">
+      <header class="header">
+        <div class="header__inner">
+          <a id="menu" class="header__menu">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M2 6h20v2H2zm0 5h20v2H2zm0 5h20v2H2z"/>
+            </svg>
+          </a>
+          <img class="header__logo" src="images/sunrise.png" alt="sunrise">
+          <div class="header__title">
+            <h2>
+              Olga Shondy
+            </h2>
+            <h5>
+              The code name
+            </h5>
+          </div>
+        </div>
+      </header>
+
+      <section class="container">
+        <nav id="drawer" class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <img src='images/house.png' alt="house">
+              <p><a href="#">Home</a></p>
+            </li>
+            <li class="nav__item">
+              <img src='images/face.png' alt="face">
+              <p><a href="#">About</a></p>
+            </li>
+            <li class="nav__item">
+              <img src='images/envelope.png' alt="envelope">
+              <p><a href="#">Contact</a></p>
+            </li>
+          </ul>
+        </nav>
+
+        <main>
+          <section class="main-theme">
+            <img src='images/main-theme.jpg' alt="picture of a coding process">
+          </section>
+
+          <section class="featured-work">
+            <h2 class="featured-work__title">Featured work </h2>
+            <div class="featured-work__container">
+              <div class="featured-work__item">
+                <a href="https://www.w3schools.com">
+                  <img src='images/sunflower.jpg' alt="picture of a sunflower">
+                </a>
+                <p class="featured-work__caption">Sunflower</p>
+                <a href="https://www.w3schools.com">https://www.w3schools.com</a>
+              </div>
+              <div class="featured-work__item">
+                <a href="https://www.w3schools.com">
+                  <img src='images/rain.jpg' alt="picture of rain">
+                </a>
+                <p class="featured-work__caption">Rain</p>
+                <a href="https://www.w3schools.com">https://www.w3schools.com</a>
+              </div>
+              <div class="featured-work__item">
+                <a href="https://www.w3schools.com">
+                  <img src='images/snow.jpg' alt="picture of snow">
+                </a>
+                <p class="featured-work__caption">Snow</p>
+                <a href="https://www.w3schools.com">https://www.w3schools.com</a>
+              </div>
+            </div>
+          </section>
+        </main>
+      </section>
+    </section>
+
+    <script>
+      /*
+       * Open the drawer when the menu icon is clicked.
+       */
+      var menu = document.querySelector('#menu');
+      var main = document.querySelector('main');
+      var drawer = document.querySelector('.nav');
+
+      menu.addEventListener('click', function(e) {
+        drawer.classList.toggle('open');
+        e.stopPropagation();
+      });
+      main.addEventListener('click', function() {
+        drawer.classList.remove('open');
+      });
+    </script>
+  </body>
+</html>

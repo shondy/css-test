@@ -1,0 +1,149 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #4a4c4e;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  border-bottom: 3px solid #a9bdca;
+  min-height: 100px;
+  width: 100%;
+  transition: min-height 0.3s;
+}
+
+ .header__inner {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header__logo {
+  height: 58px;
+  margin-top: 12px;
+}
+
+.header__title {
+  display: inline-block;
+  margin: 1.7em 0.5em 0 0;
+  font-size: 1em;
+  text-align: right;
+  line-height: 1.7em;
+  text-transform: uppercase;
+  float: right;
+}
+
+.header__title > h2 {
+  font-weight: 300;
+}
+
+.main-theme {
+  padding-top: 1em;
+  width: 100%;
+  min-height: 300px;
+  object-fit: cover;
+}
+
+.nav {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav__list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__item {
+  box-sizing: border-box;
+  display: block;
+  text-align: center;
+  line-height: 24px;
+  padding: 24px;
+  text-transform: uppercase;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #616161;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  color: #212121;
+}
+
+.nav__item > img {
+  width: 3.5em;
+  hight: 3.5em;
+}
+
+.nav__item p {
+  margin: 0;
+}
+
+main {
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26); */
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-theme {
+  width: 100%;
+  position: relative;
+  min-height: 200px;
+}
+
+.main-theme > img {
+  max-width: 100%;
+}
+
+.featured-work {
+  width: 100%;
+}
+
+.featured-work__title {
+  font-size: 2em;
+  font-weight: 200;
+  color: #616161;
+  margin-bottom: 5px;
+}
+
+.featured-work__item > a > img {
+  width: 100%;
+}
+
+.featured-work__item {
+  color: #3a3c3e;
+  text-align: center;
+}
+
+.featured-work__caption {
+  font-size: 2em;
+  font-weight: 200;
+  text-transform: uppercase;
+  -webkit-transform: scaleX(0.9);
+  transform: scaleX(0.5);
+  margin: 5px 0 0;
+}
+
+.featured-work__item > a {
+  text-decoration: none;
+  color: inherit;
