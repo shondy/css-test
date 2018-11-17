@@ -11,6 +11,9 @@
   .featured-work__item {
     width: 90%;
   }
+  .featured-work__link {
+    font-size: 0.9em;
+  }
 }
 
 @media screen and (min-width: 500px) and (max-width: 699px) {
@@ -95,26 +98,39 @@
   .featured-work__caption {
     font-size: 1.5em;
   }
-  .featured-work__item > a {
-    font-size: 0.9em;
+  .featured-work__link {
+    font-size: 0.75em;
   }
   .featured-work__item > a > img {
-    height: 7.5em;
+    height: 7em;
+  }
 }
 
 @media screen and (min-width: 770px) {
   .featured-work__item > a > img {
-    height: 8em;
+    height: 7.5em;
+  }
+  .featured-work__link {
+    font-size: 0.8em;
+  }
 }
 
 @media screen and (min-width: 830px) {
   .featured-work__item > a > img {
-    height: 8.5em;
+    height: 8em;
   }
+  .featured-work__link {
+    font-size: 0.85em;
+  }
+}
 
 @media screen and (min-width: 920px) {
   .featured-work__item > a > img {
-    height: 9.5em;
+    height: 9em;
+  }
+  .featured-work__link {
+    font-size: 0.9em;
+  }
 }
 
 @media screen and (min-width: 950px) {

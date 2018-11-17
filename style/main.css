@@ -139,11 +139,12 @@ main {
   font-size: 2em;
   font-weight: 200;
   text-transform: uppercase;
-  -webkit-transform: scaleX(0.9);
+  -webkit-transform: scaleX(0.5);
   transform: scaleX(0.5);
   margin: 5px 0 0;
 }
 
-.featured-work__item > a {
+.featured-work__item a {
   text-decoration: none;
   color: inherit;
+}
