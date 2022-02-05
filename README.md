@@ -1,2 +1,2 @@
 # portfolio-site
-The portfolio site built according Udacity's design mockup 
+The css test built according Udacity's design mockup 
